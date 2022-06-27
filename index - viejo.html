@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CubeJoyas</title>
+
+    <link rel="stylesheet" href="../Cubejoyas/estilos/estilos.css">
+</head>
+
+<body>
+    <header>
+        <!-- Encabezado > barra de notificaciones, menu, logo, buscador-->
+
+        <div id="barra_notificaciones">
+            <p>
+                ¡Solicita tu cotización ahora! ¡Es gratuito!
+            </p>
+        </div>
+
+        <nav id="nav_menu">
+            <span id="logo">
+                <a href="../Cubejoyas/index.html">
+                    <img src="../Cubejoyas/multimedia/logo-cubejoyas.jpg" alt="CubeJoyas" title="logo">
+                </a>
+            </span>
+
+            <ul class="menu">
+                <li><a href="../Cubejoyas/index.html">Inicio</a></li>
+                <li><a href="../Cubejoyas/paginas/catalogo.html">Catalogo</a>
+                    <ul class="submenu">
+                        <li><a href="">Aros de boda</a></li>
+                        <li><a href="">Anillos de compromiso</a></li>
+                        <li><a href="">Anillos de graduación</a></li>
+                    </ul>
+                </li>
+                <li><a href="../Cubejoyas/paginas/quienes-somos.html">Quienes Somos</a></li>
+                <li><a href="../Cubejoyas/paginas/clientes.html">Clientes</a></li>
+                <li><a href="../Cubejoyas/paginas/contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="banner">
+        <!-- Banner principal -->
+        <article>
+            <img src="../Cubejoyas/multimedia/banner-principal-cubejoyas.png" alt="Cubejoyas Banner"
+                title="Cubejoyas Banner">
+        </article>
+    </section>
+
+    <main>
+        <section id="categorias">
+            <!-- Categorias -->
+            <h1>Categorias</h1>
+            <article>
+                <!--Categoria 1-->
+                <img src="../Cubejoyas/multimedia/Anillos de compromiso  - categoria.png"
+                    alt="Anillos de compromiso Categoria" title="Anillos de compromiso">
+            </article>
+            <article>
+                <!--Categoria 2-->
+                <img src="../Cubejoyas/multimedia/Aros de Boda - categoria.png" alt="Aros de boda Categoria"
+                    title="Aros de boda">
+            </article>
+            <article>
+                <!--Categoria 3-->
+                <img src="../Cubejoyas/multimedia/Anillos de grado - categoria.png" alt="Anillos de grado Categoria"
+                    title="Anillos de graduación">
+            </article>
+        </section>
+        <br>
+        <section id="novedades">
+            <!-- Novedades -->
+            <h1>Novedades</h1>
+            <article>
+                <!-- Producto -->
+                <img src="../Cubejoyas/multimedia/Anillo de compromiso con diamante oro o plata.png"
+                    alt="Anillo compromiso diamante oro o plata" title="Anillo de compromiso con diamante oro o plata">
+            </article>
+            <article>
+                <!-- Producto -->
+                <img src="../Cubejoyas/multimedia/Anillo de grado con diamante azul en oro o plata.png"
+                    alt="Anillo grado diamante azul oro o plata"
+                    title="Anillo de grado con diamante azul en oro o plata">
+            </article>
+            <article>
+                <!-- Producto -->
+                <img src="../Cubejoyas/multimedia/Aro de boda Ornella en Oro o Plata a Medida.png"
+                    alt="Aro boda ornella oro o plata a medida" title="Aro de boda Ornella en Oro o Plata a Medida">
+            </article>
+        </section>
+    </main>
+    <br>
+    <section class="cotizacion">
+        <!--Solicita tu cotización-->
+        <article>
+            <input type="button" value="Solicita tu cotización" class="cotizacion_btn">
+        </article>
+    </section>
+
+    <footer>
+        <!-- PIE DE PAGINA -->
+
+
+        <div class="footer_menu">
+            <!-- Menu del footer -->
+            <ul class="footer_menu_ul">
+                <li><a href="../Cubejoyas/index.html">Inicio</a></li>
+                <li><a href="../Cubejoyas/paginas/catalogo.html">Catalogo</a></li>
+                <li><a href="../Cubejoyas/paginas/quienes-somos.html">Quienes Somos</a></li>
+                <li><a href="../Cubejoyas/paginas/clientes.html">Clientes</a></li>
+                <li><a href="../Cubejoyas/paginas/contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div class="mapa">
+            <!--Mapa GoogleMaps y dirección-->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18567.739977219757!2d-58.52021284503937!3d-34.64602166903936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9b3f2b00a4d%3A0x9521bcb70026765!2sAv.%20Rivadavia%2010000%2C%20C1407%20IUB%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1654558904066!5m2!1ses!2sar"
+                width="100" height="100" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>Rivadavia XXXXX, Liniers, XXXX, Buenos Aires, Argentina.</p>
+        </div>
+
+
+        <div class="footer_newsletter">
+            <!--Formulario de suscripción newsletter-->
+            <form action="" method="" enctype="application/x-www-form-urlencoded">
+                <label for="email">¡Suscribite a nuestro newsletter! ¡Recibi ofertas exclusivas!</label>
+                <br>
+                <input type="email" name="email" id="email" placeholder="Email">
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+
+
+
+
+        <div class="derechos">
+            <!-- Derechos -->
+            <p>2022 Cubejoyas | Diseño y desarrollo por Argenis | Todos los derechos reservados</p>
+        </div>
+
+        <div class="redes">
+            <!--Logos con link a redes sociales-->
+            <a href="https://www.facebook.com/Cubejoyas">
+                <img src="../Cubejoyas/multimedia/facebook___a6a671a9dd69fc37e4a09d971d19cbd5.svg" alt="Facebook"
+                    title="Facebook">
+            </a>
+            <a href="https://www.instagram.com/Cubejoyas">
+                <img src="../Cubejoyas/multimedia/instagram___22ed4108400f0b62e45d532bd579e75c.svg" alt="Instagram"
+                    title="Whatsapp">
+            </a>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

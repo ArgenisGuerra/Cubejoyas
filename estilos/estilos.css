@@ -1,0 +1,587 @@
+/* ESTILOS GENERALES */
+
+html{
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body{
+    background-color: #FFFDF7;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1.8rem;
+    
+}
+
+h1{
+    margin: 1rem;
+    text-align: center;
+}
+
+/* ENCABEZADO (Start) */
+
+header{
+    /* grid-area: header; */
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: repeat(2, auto);
+    gap: 0px 0px;
+    grid-template-areas:
+    "notificaciones notificaciones notificaciones"
+    "logo menu buscador";
+}
+
+.notificaciones{
+    grid-area: notificaciones;
+    background-color: #99D6EA;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    padding: 4px;
+}
+
+.logo{
+    grid-area: logo;
+    justify-self: center;
+}
+
+.logo img{
+    height: 150px;
+    width: 150px;  
+}
+
+/* Tablet RD - Header */
+
+@media screen and (max-width: 768px){
+    header{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 0.3fr 0.5fr 2fr;
+        gap: 0px 0px;
+        grid-template-areas:
+        "notificaciones notificaciones"
+        "logo buscador"
+        "menu menu";
+    }
+}
+
+/* Celular RD - Header */
+
+@media screen and (max-width: 480px){
+    header{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(3, auto);
+        gap: 0px 0px;
+        grid-template-areas:
+        "notificaciones notificaciones"
+        "logo buscador"
+        "menu menu";
+    }
+
+    .logo img{
+        height: 100px;
+        width: 100px;  
+    }
+}
+
+/* ENCABEZADO > MENU  */
+
+.menu{
+    grid-area: menu;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.menu_ul{
+    list-style:none;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 2.5rem;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+}
+
+.menu_ul li{
+    display: inline-block;
+    padding: 0.8rem 1.2rem;
+    position: relative;
+}
+
+.submenu_ul{
+    position: absolute;
+    display: none;
+    width: 15rem;
+    top: 3rem;
+}
+
+.submenu_ul li{
+    display: block;
+    background-color: #FFFDF7;
+}
+
+.menu_ul li:hover .submenu_ul{
+    display: block;
+}
+
+
+/* ESTILOS LINKS */
+
+a{
+    color: black;
+    text-decoration-line: none;
+}
+
+a:hover{
+    font-weight: bold;
+    text-decoration:underline 0.25rem;
+    color: #FDC921;
+}
+
+
+/* BUSCADOR */
+.buscador{
+    grid-area: buscador;
+    display: grid;
+    grid-template-columns: 80% 10%;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    "buscadortexto buscador_btn";
+    align-items: center;
+}
+
+.buscadortexto{
+    grid-area: buscadortexto;
+    font-size: 2.5rem;
+    width: 80%;
+    height: 50px;
+    justify-self: right;
+    align-items: right;
+    padding: 25px;
+    margin: 15px;
+}
+
+.buscador_btn{
+    grid-area: buscador_btn;
+    width: 50px;
+    height: 50px;
+    justify-self: left;
+}
+
+
+/* ENCABEZADO (End) */
+
+
+/* MAIN INDEX (Start) */
+
+.mainindex{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(5, auto);
+    gap: 0px 0px;
+    grid-template-areas:
+    "banner"
+    "categorias"
+    "novedades_titulo"
+    "novedades"
+    "cotizacion";
+}
+
+.banner{
+    grid-area: banner;
+    text-align: center;
+}
+
+.banner img{
+    width: 90%;
+    height: 90%;
+}
+
+.categorias{
+    grid-area: categorias;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.novedades_titulo{
+    grid-area: novedades_titulo;
+}
+
+
+.novedades{
+    grid-area: novedades;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.cotizacion{
+    grid-area: cotizacion;
+    text-align: center;
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cotizacion_btn{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 2rem;
+}
+
+
+/* FOOTER */
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
+    gap: 0px 0px;
+    grid-template-areas:
+    "footer_menu mapa footer_newsletter"
+    "derechos derechos derechos";
+    border-top: solid 2px black;
+    background-color: #99D6EA;
+    padding: 10px;
+}
+
+.footer_menu{
+    grid-area: footer_menu;
+    font-size: 1.8rem;
+    font-weight: bold;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.mapa{
+    grid-area: mapa;
+    font-weight: bold;
+    text-align: center;
+}
+
+.footer_newsletter{
+    grid-area: footer_newsletter;
+    font-weight: bold;
+    text-align: center;
+}
+
+.derechos{
+    grid-area: derechos;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.2fr;
+    gap: 0px 0px;
+    grid-template-areas: 
+    "derechos_texto redes";
+}
+
+.derechos_texto{
+    grid-area: derechos_texto;
+    text-align: center;
+    font-weight: bold;
+}
+
+.redes{
+    grid-area: redes;
+    text-align: center;
+}
+
+
+/* Tablet RD - Footer */
+@media screen and (max-width: 768px){
+    footer{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(3, auto);
+        gap: 0px 0px;
+        grid-template-areas:
+        "footer_menu mapa"
+        "footer_newsletter footer_newsletter"
+        "derechos derechos";
+        border-top: solid 2px black;
+        background-color: #99D6EA;
+        padding: 10px;
+    }
+
+}
+
+/* Celular RD - Footer */
+@media screen and (max-width: 468px){
+    footer{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4, auto);
+        gap: 0px 0px;
+        grid-template-areas:
+        "footer_menu"
+        "mapa"
+        "footer_newsletter"
+        "derechos";
+        border-top: solid 2px black;
+        background-color: #99D6EA;
+        padding: 10px;
+    }
+
+}
+
+
+/* PAGINA CATALOGO */
+
+.maincatalogo{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: repeat(3, auto);
+    gap: 0px 0px;
+    grid-template-areas: 
+    "catalogo_titulo catalogo_titulo"
+    "filtros productos"
+    "cotizacion cotizacion";
+}
+
+.catalogo_titulo{
+    grid-area: catalogo_titulo;
+}
+
+.filtros{
+    grid-area: filtros;
+}
+
+.productos{
+    grid-area: productos;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.productos article{
+    width: 350px;
+    height: 340px;
+    padding: 1%;
+    text-align: center;
+}
+
+.filtros{
+    list-style:none;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 2.5rem;
+}
+
+.filtros li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Tablet RD - Pagina catalogo */
+
+@media screen and (max-width: 768px){
+    .maincatalogo{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4,auto);
+        gap: 0px 0px;
+        grid-template-areas: 
+        "catalogo_titulo"
+        "filtros"
+        "productos"
+        "cotizacion";
+    }
+    
+    .filtros{
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+}
+
+/* Celular RD - Pagina catalogo */
+
+@media screen and (max-width: 468px){
+    .maincatalogo{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4,auto);
+        gap: 0px 0px;
+        grid-template-areas: 
+        "catalogo_titulo"
+        "filtros"
+        "productos"
+        "cotizacion";
+    }
+    
+    .filtros{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* PAGINA CLIENTES */
+
+.mainclientes{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, auto);
+    gap: 0px 0px;
+    grid-template-areas: 
+    "clientes_titulo"
+    "cliente"
+    "cotizacion"
+}
+
+.cliente{
+    grid-area: cliente;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cliente article{
+    height: auto;
+    width: 350px;
+    text-align: center;
+}
+
+
+.cliente article div img{
+    width: 100%;
+    height: 340px;
+    padding: 1%;
+    text-align: center;
+}
+
+
+/* PAGINA NOSOTROS */
+
+.main-nosotros{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, auto);
+    gap: 0px 0px;
+    grid-template-areas:
+    "nosotros-titulo"
+    "video"
+    "taller"
+    "cotizacion";
+}
+
+.nosotros-titulo{
+    grid-area: nosotros-titulo;
+}
+
+.video{
+    grid-area: video;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.video article{
+    width: 500px;
+    text-align: center;
+}
+
+.taller{
+    grid-area: taller;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+.taller article{
+    width: 500px;
+    text-align: center;
+}
+
+.taller article div img{
+    width: 400px;
+    height: auto;
+}
+
+
+
+/* PAGINA CONTACTO */
+
+.maincontacto{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    gap: 0px 0px;
+    grid-template-areas:
+    "formulario-titulo"
+    "formulario";
+}
+
+.formulario-titulo{
+    grid-area: formulario-titulo;
+}
+
+.formulario{
+    grid-area: formulario;
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 50px;
+}
+
+.formulario input{
+    font-size: 2rem;
+    padding: 2px;
+    margin: 10px;
+}
+
+.formulario select{
+    font-size: 2rem;
+    padding: 4px;
+    margin: 10px;
+}
+
+.formulario textarea{
+    padding: 2px;
+    margin: 20px;
+}
+
+/* Tablet RD - Pagina contacto */
+
+@media screen and (max-width: 768px){
+    .formulario{
+        font-size: 2.5rem;
+    }
+}
+
+/* Celular RD - Pagina contacto */
+
+@media screen and (max-width: 468px){
+    .formulario{
+        font-size: 2rem;
+        margin: 10px;
+    }
+}
