@@ -11,7 +11,8 @@ html{
 }
 
 body{
-    background-color: #FFFDF7;
+    /* background-color: #FFFDF7; */
+    background-image: linear-gradient(#FFFDF7, #fce8ae);
     font-family:'Times New Roman', Times, serif;
     font-size: 1.8rem;
     
@@ -38,9 +39,29 @@ header{
     grid-area: notificaciones;
     background-color: #99D6EA;
     text-align: center;
-    color: black;
     font-weight: bold;
     padding: 4px;
+
+}
+
+.notificaciones p{
+    animation-name:atenuar;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 3s;
+    animation-delay: 0s;
+}
+
+@keyframes atenuar{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 .logo{
@@ -95,6 +116,7 @@ header{
     margin-top: 3rem;
     margin-bottom: 3rem;
     position: relative;
+    z-index: 1000;
 }
 
 .menu_ul{
@@ -135,10 +157,12 @@ header{
 a{
     color: black;
     text-decoration-line: none;
+    transition: font-size 1s;
 }
 
 a:hover{
     font-weight: bold;
+    font-size: 2.5rem;
     text-decoration:underline 0.25rem;
     color: #FDC921;
 }
@@ -211,6 +235,14 @@ a:hover{
     padding: 20px;
 }
 
+.categorias img{
+    transition: all 2s;
+}
+
+.categorias img:hover{
+    transform: scale(1.3,1.3);
+}
+
 .novedades_titulo{
     grid-area: novedades_titulo;
 }
@@ -223,6 +255,14 @@ a:hover{
     flex-direction: row;
     justify-content: space-around;
     padding: 20px;
+}
+
+.novedades img{
+    transition: all 2s;
+}
+
+.novedades img:hover{
+    transform: scale(1.3,1.3);
 }
 
 .cotizacion{
@@ -374,6 +414,14 @@ footer{
     height: 340px;
     padding: 1%;
     text-align: center;
+}
+
+.productos iframe{
+    transition: all 2s;
+}
+
+.productos iframe:hover{
+    transform: scale(1.2,1.2);
 }
 
 .filtros{
@@ -548,25 +596,30 @@ footer{
     grid-area: formulario;
     text-align: center;
     font-size: 2.5rem;
-    margin: 50px;
+    margin: 5%;
 }
 
 .formulario input{
-    font-size: 2rem;
-    padding: 2px;
-    margin: 10px;
+    font-size: 2.5rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: solid 1px black;
+    width: 300px;
 }
 
 .formulario select{
-    font-size: 2rem;
-    padding: 4px;
+    font-size: 2.5rem;
     margin: 10px;
+    border: solid 1px black;
 }
 
 .formulario textarea{
-    padding: 2px;
-    margin: 20px;
+    margin: 10px;
+    border: solid 1px black;
+    width: 50%;
 }
+
+
 
 /* Tablet RD - Pagina contacto */
 
@@ -574,13 +627,24 @@ footer{
     .formulario{
         font-size: 2.5rem;
     }
+    .formulario textarea{
+        width: 70%;
+    }
 }
 
 /* Celular RD - Pagina contacto */
 
-@media screen and (max-width: 468px){
+@media screen and (max-width: 320px){
     .formulario{
-        font-size: 2rem;
         margin: 10px;
+    }
+    .formulario input{
+        width: 98%;
+    }
+    .formulario textarea{
+        width: 98%;
+    }
+    .formulario label{
+        font-size: 2.5rem;
     }
 }

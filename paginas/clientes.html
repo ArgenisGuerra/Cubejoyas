@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clientes</title>
+    <!-- AOS Animated on scroll library  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Animate.style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Estilos locales -->
     <link rel="stylesheet" href="../estilos/estilos.css">
 </head>
 
@@ -43,24 +48,21 @@
         </nav>
 
         <!-- Buscador -->
-        <form action="" class="buscador">
-            <input type="search" name="" id="" placeholder="search" class="buscadortexto">
-            <input type="submit" value="&#10140;" class="buscador_btn">
-        </form>
+
 
     </header>
 
 
 
 
-    <main class="mainclientes">
+    <main class="mainclientes animate__animated animate__backInRight">
 
         <h1 class="clientes_titulo">¡Clientes felices!</h1>
 
         <section class="cliente">
             <article>  <!-- Cliente 1 -->
                 <div>
-                    <img src="../multimedia/C1.jpeg" alt="">
+                    <img src="../multimedia/C1.jpeg" alt="" class="animate__shakeX">
                 </div>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque et, incidunt architecto laudantium nam totam ratione magnam, laboriosam, possimus pariatur qui natus nulla veniam. Laboriosam minima possimus modi natus excepturi, verit
@@ -150,6 +152,12 @@
         </section>
 
     </footer>
+
+    <!-- AOS Animated on scroll library  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

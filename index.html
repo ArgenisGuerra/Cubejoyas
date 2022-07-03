@@ -6,7 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CubeJoyas</title>
-
+    <!-- AOS Animated on scroll library  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Animate.style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Estilos locales -->
     <link rel="stylesheet" href="../Cubejoyas/estilos/estilos.css">
 </head>
 
@@ -15,7 +19,7 @@
         <!-- Barra de notificaciones -->
         <div class="notificaciones">
             <p>
-                ¡Solicita tu cotización ahora! ¡Es gratuito!!
+                ¡Solicita tu cotización ahora! ¡Es gratuito!
             </p>
         </div>
 
@@ -44,15 +48,14 @@
         </nav>
 
         <!-- Buscador -->
-        <form action="" class="buscador">
-            <input type="search" name="" id="" placeholder="search" class="buscadortexto">
-            <input type="submit" value="&#10140;" class="buscador_btn">
-        </form>
+        <div>
+
+        </div>
     </header>
 
     <!-- Banner -->
     <main class="mainindex">
-        <section class="banner">
+        <section class="banner animate__animated animate__fadeIn">
             <article>
                 <img src="../Cubejoyas/multimedia/banner-principal-cubejoyas.png" alt="Cubejoyas Banner"
                     title="Cubejoyas Banner">
@@ -61,17 +64,17 @@
 
         <!-- Categorias -->
         <section class="categorias">
-            <article>
+            <article data-aos="zoom-in">
                 <!--Categoria 1-->
                 <img src="../Cubejoyas/multimedia/Anillos de compromiso  - categoria.png"
                     alt="Anillos de compromiso Categoria" title="Anillos de compromiso">
             </article>
-            <article>
+            <article data-aos="zoom-in">
                 <!--Categoria 2-->
                 <img src="../Cubejoyas/multimedia/Aros de Boda - categoria.png" alt="Aros de boda Categoria"
                     title="Aros de boda">
             </article>
-            <article>
+            <article data-aos="zoom-in">
                 <!--Categoria 3-->
                 <img src="../Cubejoyas/multimedia/Anillos de grado - categoria.png" alt="Anillos de grado Categoria"
                     title="Anillos de graduación">
@@ -82,18 +85,18 @@
         <h1 class="novedades_titulo">Novedades</h1>
 
         <section class="novedades">
-            <article>
+            <article data-aos="zoom-in">
                 <!-- Producto -->
                 <img src="../Cubejoyas/multimedia/Anillo de compromiso con diamante oro o plata.png"
                     alt="Anillo compromiso diamante oro o plata" title="Anillo de compromiso con diamante oro o plata">
             </article>
-            <article>
+            <article data-aos="zoom-in">
                 <!-- Producto -->
                 <img src="../Cubejoyas/multimedia/Anillo de grado con diamante azul en oro o plata.png"
                     alt="Anillo grado diamante azul oro o plata"
                     title="Anillo de grado con diamante azul en oro o plata">
             </article>
-            <article>
+            <article data-aos="zoom-in">
                 <!-- Producto -->
                 <img src="../Cubejoyas/multimedia/Aro de boda Ornella en Oro o Plata a Medida.png"
                     alt="Aro boda ornella oro o plata a medida" title="Aro de boda Ornella en Oro o Plata a Medida">
@@ -161,7 +164,12 @@
         </section>
 
     </footer>
-
+    
+    <!-- AOS Animated on scroll library  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

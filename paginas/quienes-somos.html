@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quienes Somos</title>
+    <!-- AOS Animated on scroll library  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Animate.style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Estilos locales -->
     <link rel="stylesheet" href="../estilos/estilos.css">
 </head>
 <body>
@@ -41,15 +46,12 @@
         </nav>
 
         <!-- Buscador -->
-        <form action="" class="buscador">
-            <input type="search" name="" id="" placeholder="search" class="buscadortexto">
-            <input type="submit" value="&#10140;" class="buscador_btn">
-        </form>
+
     </header>
 
 
 
-    <main class="main-nosotros">
+    <main class="main-nosotros animate__animated animate__backInRight">
         <h1 class="nosotros-titulo">¡Te contamos nuestra experiencia!</h1>
         <section class="video">
             <article>
@@ -151,6 +153,12 @@
         </section>
 
     </footer>
+
+    <!-- AOS Animated on scroll library  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>
