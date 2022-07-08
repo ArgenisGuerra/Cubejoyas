@@ -5,12 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catalogo</title>
+    <!-- CDN Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- AOS Animated on scroll library  -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Animate.style -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- Estilos locales -->
-    <link rel="stylesheet" href="../estilos/estilos.css">
+    <!-- <link rel="stylesheet" href="../estilos/estilos.css"> -->
+    <link rel="stylesheet" href="../estilos/estilosv2.css">
 </head>
 <body>
     <header>
@@ -21,176 +24,221 @@
             </p>
         </div>
 
-        <!-- Logo -->
-        <div class="logo">
-            <a href="../index.html">
-                <img src="../multimedia/logo-cubejoyas.jpg" alt="CubeJoyas" title="logo">
-            </a>
-        </div>
-
-        <!-- Menu -->
-        <nav class="menu">
-            <ul class="menu_ul">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../paginas/catalogo.html">Catalogo</a>
-                    <ul class="submenu_ul">
-                        <li><a href="">Aros de boda</a></li>
-                        <li><a href="">Anillos de compromiso</a></li>
-                        <li><a href="">Anillos de graduación</a></li>
+        <!-- Menu bootstrap -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../multimedia/logo-cubejoyas.jpg" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../paginas/quienes-somos.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Catalogo
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="../paginas/catalogo.html">Aros de boda</a></li>
+                                <li><a class="dropdown-item" href="../paginas/catalogo.html">Anillos de compromiso</a></li>
+                                <li><a class="dropdown-item" href="../paginas/catalogo.html">Anillos de graduación</a></li>
+                                <li><a class="dropdown-item" href="../paginas/catalogo.html">Ver todos los productos</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../paginas/clientes.html">Clientes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../paginas/contacto.html">Contacto</a>
+                        </li>
                     </ul>
-                </li>
-                <li><a href="../paginas/quienes-somos.html">Quienes Somos</a></li>
-                <li><a href="../paginas/clientes.html">Clientes</a></li>
-                <li><a href="../paginas/contacto.html">Contacto</a></li>
-            </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Busqueda</button>
+                    </form>
+                </div>
+            </div>
         </nav>
-
-        <!-- Buscador -->
 
     </header>
 
     <main class="maincatalogo animate__animated animate__backInRight"> 
 
         <h1 class="catalogo_titulo">Catalogo</h1>
-
-        <ul class="filtros">
-            <li>Anillos de graduación</li>
-            <li>Aros de boda</li>
-            <li>Aros de compromiso</li>
-        </ul>
-
-        <!-- Productos -->
-        <section class="productos"> 
-            <article data-aos="zoom-in"> <!-- Producto1-->
-                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjoyeriacubejoyas%2Fposts%2F3232903730280558&show_text=false&width=500" width="300" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-            </article>
-
-            <article data-aos="zoom-in"> <!-- Producto2-->
-                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjoyeriacubejoyas%2Fposts%2F3232166500354281&show_text=false&width=500" width="300" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-            </article>
-
-            <article data-aos="zoom-in"> <!-- Producto3-->
-                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjoyeriacubejoyas%2Fposts%2F3229901880580743&show_text=false&width=500" width="300" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-            </article>
-
-            <article data-aos="zoom-in"> <!-- Producto4-->
-                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjoyeriacubejoyas%2Fposts%2F3228214960749435&show_text=false&width=500" width="300" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-            </article>
-
-            <article data-aos="zoom-in"> <!-- Producto5-->
-                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjoyeriacubejoyas%2Fposts%2F3226029510967980&show_text=false&width=500" width="300" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-            </article>
-
-            <article data-aos="zoom-in"> <!-- Producto6-->
-                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjoyeriacubejoyas%2Fposts%2F3223433691227562&show_text=false&width=500" width="300" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-            </article>
-
-            <article data-aos="zoom-in"> <!-- Producto7-->
-                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjoyeriacubejoyas%2Fposts%2F3219320608305537&show_text=false&width=500" width="300" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-            </article>
-
-            <article data-aos="zoom-in"> <!-- Producto8-->
-                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjoyeriacubejoyas%2Fposts%2F3217534998484098&show_text=false&width=500" width="300" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-            </article>
-
-            <article data-aos="zoom-in"> <!-- Producto9-->
-                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjoyeriacubejoyas%2Fposts%2F3216338158603782&show_text=false&width=500" width="300" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-            </article>
-
-            <article data-aos="zoom-in"> <!-- Producto10-->
-                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjoyeriacubejoyas%2Fposts%2F3209617699275828&show_text=false&width=500" width="300" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-            </article>
-
-            <article data-aos="zoom-in"> <!-- Producto11-->
-                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjoyeriacubejoyas%2Fposts%2F3223433691227562&show_text=false&width=500" width="300" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-            </article>
-
-            <article data-aos="zoom-in"> <!-- Producto12-->
-                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjoyeriacubejoyas%2Fposts%2F3207854979452100&show_text=false&width=500" width="300" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-            </article>
-
-            <article data-aos="zoom-in"> <!-- Producto13-->
-                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjoyeriacubejoyas%2Fposts%2F3205451416359123&show_text=false&width=500" width="300" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-            </article>
-
-            <article data-aos="zoom-in"> <!-- Producto14-->
-                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjoyeriacubejoyas%2Fposts%2F3204059353164996&show_text=false&width=500" width="300" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-            </article>
-
-            <article data-aos="zoom-in"> <!-- Producto15-->
-                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjoyeriacubejoyas%2Fphotos%2Fa.2345952295642377%2F3194420657462199%2F%3Ftype%3D3&show_text=false&width=500" width="300" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-            </article>
-
-            <article data-aos="zoom-in"> <!-- Producto16-->
-                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjoyeriacubejoyas%2Fposts%2F3190943701143228&show_text=false&width=500" width="300" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-            </article>
-        </section>
-
-        <!--Solicita tu cotización-->
-        <section class="cotizacion"> 
-            <article>
-                <input type="button" value="Solicita tu cotización" class="cotizacion_btn">
-            </article>
         
-        <!-- Ver todos los productos -->
-            <article>
-                <input type="button" value="Ver todos los productos" class="cotizacion_btn">
-            </article>
-        </section>
+        <!-- Productos -->
+        <div class="container-fluid catalogo">
+            <div class="row">
+                <article data-aos="zoom-in" class="col-lg-4 col-md-6">
+                    <!-- Producto1-->
+                    <img src="../multimedia/Productos/1.jpg" alt="">
+                </article>
+        
+                <article data-aos="zoom-in" class="col-lg-4 col-md-6">
+                    <!-- Producto2-->
+                    <img src="../multimedia/Productos/2.jpg" alt="">
+                </article>
+        
+                <article data-aos="zoom-in" class="col-lg-4 col-md-6">
+                    <!-- Producto3-->
+                    <img src="../multimedia/Productos/3.jpg" alt="">
+                </article>
+        
+                <article data-aos="zoom-in" class="col-lg-4 col-md-6">
+                    <!-- Producto4-->
+                    <img src="../multimedia/Productos/4.jpg" alt="">
+                </article>
+        
+                <article data-aos="zoom-in" class="col-lg-4 col-md-6">
+                    <!-- Producto5-->
+                    <img src="../multimedia/Productos/5.jpg" alt="">
+                </article>
+        
+                <article data-aos="zoom-in" class="col-lg-4 col-md-6">
+                    <!-- Producto6-->
+                    <img src="../multimedia/Productos/6.jpg" alt="">
+                </article>
+        
+                <article data-aos="zoom-in" class="col-lg-4 col-md-6">
+                    <!-- Producto7-->
+                    <img src="../multimedia/Productos/7.jpg" alt="">
+                </article>
+        
+                <article data-aos="zoom-in" class="col-lg-4 col-md-6">
+                    <!-- Producto8-->
+                    <img src="../multimedia/Productos/8.jpg" alt="">
+                </article>
+        
+                <article data-aos="zoom-in" class="col-lg-4 col-md-6">
+                    <!-- Producto9-->
+                    <img src="../multimedia/Productos/9.jpg" alt="">
+                </article>
+        
+                <article data-aos="zoom-in" class="col-lg-4 col-md-6">
+                    <!-- Producto10-->
+                    <img src="../multimedia/Productos/10.jpg" alt="">
+                </article>
+        
+                <article data-aos="zoom-in" class="col-lg-4 col-md-6">
+                    <!-- Producto11-->
+                    <img src="../multimedia/Productos/11.jpg" alt="">
+                </article>
+        
+                <article data-aos="zoom-in" class="col-lg-4 col-md-6">
+                    <!-- Producto12-->
+                    <img src="../multimedia/Productos/12.jpg" alt="">
+                </article>
+        
+                <article data-aos="zoom-in" class="col-lg-4 col-md-6">
+                    <!-- Producto13-->
+                    <img src="../multimedia/Productos/13.jpg" alt="">
+                </article>
+        
+                <article data-aos="zoom-in" class="col-lg-4 col-md-6">
+                    <!-- Producto14-->
+                    <img src="../multimedia/Productos/14.jpg" alt="">
+                </article>
+        
+                <article data-aos="zoom-in" class="col-lg-4 col-md-6">
+                    <!-- Producto15-->
+                    <img src="../multimedia/Productos/15.jpg" alt="">
+                </article>
+        
+                <article data-aos="zoom-in" class="col-lg-4 col-md-6">
+                    <!-- Producto16-->
+                    <img src="../multimedia/Productos/16.jpg" alt="">
+                </article>
+            </div>
+        </div>
+
+        
+
+        <div class="container-fluid contenedor_cotizacion">
+            <div class="row">
+                <!--Solicita tu cotización-->
+                <article class="col-6"> 
+                    <input type="button" value="Solicita tu cotización" class="cotizacion_btn">
+                </article>
+
+                <!-- Ver todos los productos -->
+                <article class="col-6">
+                    <input type="button" value="Ver todos los productos" class="cotizacion_btn">
+                </article>
+            </div>
+        </div>
 
     </main>
 
     <footer>
-        <!-- Footer menu -->
-        <section class="footer_menu">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../paginas/catalogo.html">Catalogo</a></li>
-                <li><a href="../paginas/quienes-somos.html">Quienes Somos</a></li>
-                <li><a href="../paginas/clientes.html">Clientes</a></li>
-                <li><a href="../paginas/contacto.html">Contacto</a></li>
-            </ul>
-        </section>
-
-        <!-- Mapa -->
-        <section class="mapa">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18567.739977219757!2d-58.52021284503937!3d-34.64602166903936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9b3f2b00a4d%3A0x9521bcb70026765!2sAv.%20Rivadavia%2010000%2C%20C1407%20IUB%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1654558904066!5m2!1ses!2sar"
-                width="150" height="150" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <p>Rivadavia XXXXX, Liniers, XXXX, Buenos Aires, Argentina.</p>
-        </section>
-
-        <!--Formulario de suscripción newsletter-->
-        <section class="footer_newsletter">
-            
-            <form action="" method="" enctype="application/x-www-form-urlencoded">
-                <label for="email">¡Suscribite a nuestro newsletter! ¡Recibi ofertas exclusivas!</label>
-                <br>
-                <input type="email" name="email" id="email" placeholder="Email">
-                <input type="submit" value="Enviar">
-            </form>
-        </section>
-
-        <!-- Derechos -->
-        <section class="derechos">
-        
-            <div class="derechos_texto">
-                <p>2022 Cubejoyas | Diseño y desarrollo por Argenis | Todos los derechos reservados</p>
+        <div class="container-fluid">
+            <!-- menu, mapa y newsletter -->
+            <div class="row">.
+                <!-- menu -->
+                <div class="col-md-4 col-sm-6">
+                    <section class="footer_menu">
+                        <ul>
+                            <li><a href="../index.html">Inicio</a></li>
+                            <li><a href="../paginas/catalogo.html">Catalogo</a></li>
+                            <li><a href="../paginas/quienes-somos.html">Quienes Somos</a></li>
+                            <li><a href="../paginas/clientes.html">Clientes</a></li>
+                            <li><a href="../paginas/contacto.html">Contacto</a></li>
+                        </ul>
+                    </section>
+                </div>
+                <!-- mapa -->
+                <div class="col-md-4 col-sm-5">
+                    <section class="mapa">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18567.739977219757!2d-58.52021284503937!3d-34.64602166903936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9b3f2b00a4d%3A0x9521bcb70026765!2sAv.%20Rivadavia%2010000%2C%20C1407%20IUB%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1654558904066!5m2!1ses!2sar"
+                            width="150" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <p>Rivadavia XXXXX, Liniers, XXXX, Buenos Aires, Argentina.</p>
+                    </section>
+                </div>
+                <!-- newsletter -->
+                <div class="col-md-3 col-sm-12">
+                    <section class="footer_newsletter">
+                        <form action="" method="" enctype="application/x-www-form-urlencoded">
+                            <label for="email">¡Suscribite a nuestro newsletter! ¡Recibi ofertas exclusivas!</label>
+                            <br>
+                            <input type="email" name="email" id="email" placeholder="Email">
+                            <input type="submit" value="Enviar">
+                        </form>
+                    </section>
+                </div>
             </div>
-        
-            <!--Logo redes-->
-            <div class="redes">
-                <a href="https://www.facebook.com">
-                    <img src="../multimedia/facebook___a6a671a9dd69fc37e4a09d971d19cbd5.svg" alt="Facebook"
-                        title="Facebook">
-                </a>
-                <a href="https://www.instagram.com">
-                    <img src="../multimedia/instagram___22ed4108400f0b62e45d532bd579e75c.svg" alt="Instagram"
-                        title="Whatsapp">
-                </a>
+
+
+        </div>
+
+        <!-- derechos y redes -->
+        <div class="container-fluid">
+            <div class="row">
+                <!-- derechos -->
+                <div class="derechos_texto col-md-10">
+                    <p>2022 Cubejoyas | Diseño y desarrollo por Argenis | Todos los derechos reservados</p>
+                </div>
+                <!-- redes -->
+                <div class="redes col-md-2">
+                    <a href="https://www.facebook.com">
+                        <img src="../multimedia/facebook___a6a671a9dd69fc37e4a09d971d19cbd5.svg" alt="Facebook"
+                            title="Facebook">
+                    </a>
+                    <a href="https://www.instagram.com">
+                        <img src="../multimedia/instagram___22ed4108400f0b62e45d532bd579e75c.svg" alt="Instagram"
+                            title="Whatsapp">
+                    </a>
+                </div>
             </div>
-        </section>
+        </div>
 
     </footer>
  
@@ -199,6 +247,9 @@
     <script>
         AOS.init();
     </script>
+
+    <!-- Script Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 </body>
 </html>

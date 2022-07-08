@@ -6,12 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clientes</title>
+    <!-- CDN Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- AOS Animated on scroll library  -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Animate.style -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- Estilos locales -->
-    <link rel="stylesheet" href="../estilos/estilos.css">
+    <!-- <link rel="stylesheet" href="../estilos/estilos.css"> -->
+    <link rel="stylesheet" href="../estilos/estilosv2.css">
 </head>
 
 <body>
@@ -23,32 +26,49 @@
             </p>
         </div>
 
-        <!-- Logo -->
-        <div class="logo">
-            <a href="../index.html">
-                <img src="../multimedia/logo-cubejoyas.jpg" alt="CubeJoyas" title="logo">
-            </a>
-        </div>
-
-        <!-- Menu -->
-        <nav class="menu">
-            <ul class="menu_ul">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../paginas/catalogo.html">Catalogo</a>
-                    <ul class="submenu_ul">
-                        <li><a href="">Aros de boda</a></li>
-                        <li><a href="">Anillos de compromiso</a></li>
-                        <li><a href="">Anillos de graduación</a></li>
+        <!-- Menu bootstrap -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../multimedia/logo-cubejoyas.jpg" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../paginas/quienes-somos.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Catalogo
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="../paginas/catalogo.html">Aros de boda</a></li>
+                                <li><a class="dropdown-item" href="../paginas/catalogo.html">Anillos de compromiso</a></li>
+                                <li><a class="dropdown-item" href="../paginas/catalogo.html">Anillos de graduación</a></li>
+                                <li><a class="dropdown-item" href="../paginas/catalogo.html">Ver todos los productos</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../paginas/clientes.html">Clientes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../paginas/contacto.html">Contacto</a>
+                        </li>
                     </ul>
-                </li>
-                <li><a href="../paginas/quienes-somos.html">Quienes Somos</a></li>
-                <li><a href="../paginas/clientes.html">Clientes</a></li>
-                <li><a href="../paginas/contacto.html">Contacto</a></li>
-            </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Busqueda</button>
+                    </form>
+                </div>
+            </div>
         </nav>
-
-        <!-- Buscador -->
-
 
     </header>
 
@@ -59,97 +79,142 @@
 
         <h1 class="clientes_titulo">¡Clientes felices!</h1>
 
-        <section class="cliente">
-            <article>  <!-- Cliente 1 -->
-                <div>
+        <!-- <div class="container-fluid col-lg-6">
+            <div class="row">
+
+            </div>
+        </div> -->
+
+        <!-- Cliente 1 -->
+        <div class="container-fluid cliente">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 imagen_cliente">
                     <img src="../multimedia/C1.jpeg" alt="" class="animate__shakeX">
                 </div>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque et, incidunt architecto laudantium nam totam ratione magnam, laboriosam, possimus pariatur qui natus nulla veniam. Laboriosam minima possimus modi natus excepturi, verit
-                </p>
-            </article>
-
-            <article>  <!-- Cliente 2 -->
-                <div>
-                    <img src="../multimedia/C3.jpeg" alt="">
+                <div class="col-lg-6 col-md-6">
+                    <div class="container-fluid">
+                        <div class="row texto_cliente">
+                            <h2>Juan Valdivia</h2>
+                        </div>
+                        <div class="row texto_cliente">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit cumque distinctio eveniet, reiciendis omnis aspernatur optio odit laborum ratione saepe voluptatem, suscipit eaque libero alias illum officia qui, fugiat magni?
+                        </div>
+                    </div>
                 </div>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque et, incidunt architecto laudantium nam totam ratione magnam, laboriosam, possimus pariatur qui natus nulla veniam. Laboriosam minima possimus modi natus excepturi, verit
-                </p>
-            </article>
-        
-            <article>  <!-- Cliente 3 -->
-                <div>
-                    <img src="../multimedia/C5.jpeg" alt="">
+            </div>
+
+        <!-- Cliente 2 -->
+        <div class="container-fluid cliente">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="container-fluid">
+                        <div class="row texto_cliente">
+                            <h2>Ana Esperanza</h2>
+                        </div>
+                        <div class="row texto_cliente">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit cumque distinctio eveniet, reiciendis omnis aspernatur optio odit laborum ratione saepe voluptatem, suscipit eaque libero alias illum officia qui, fugiat magni?
+                        </div>
+                    </div>
                 </div>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque et, incidunt architecto laudantium nam totam ratione magnam, laboriosam, possimus pariatur qui natus nulla veniam. Laboriosam minima possimus modi natus excepturi, verit
-                </p>
-            </article>
-        </section>
+                <div class="col-lg-6 col-md-6 imagen_cliente">
+                    <img src="../multimedia/C3.jpeg" alt="" class="animate__shakeX">
+                </div>
+            </div>
 
-            <!--Solicita tu cotización-->
+        <!-- Cliente 3 -->
+        <div class="container-fluid cliente">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 imagen_cliente">
+                    <img src="../multimedia/C5.jpeg" alt="" class="animate__shakeX">
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="container-fluid">
+                        <div class="row texto_cliente">
+                            <h2>Pedro Perez</h2>
+                        </div>
+                        <div class="row texto_cliente">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit cumque distinctio eveniet, reiciendis omnis aspernatur optio odit laborum ratione saepe voluptatem, suscipit eaque libero alias illum officia qui, fugiat magni?
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-            <section class="cotizacion">
-                
+     
+
+        <!--Solicita tu cotización-->
+        <div class="container-fluid contenedor_cotizacion">
+            <div class="row">
                 <article>
                     <input type="button" value="Solicita tu cotización" class="cotizacion_btn">
                 </article>
-            </section>
-
+            </div>
+        </div>
         
 
     </main>
 
     <footer>
-        <!-- Footer menu -->
-        <section class="footer_menu">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../paginas/catalogo.html">Catalogo</a></li>
-                <li><a href="../paginas/quienes-somos.html">Quienes Somos</a></li>
-                <li><a href="../paginas/clientes.html">Clientes</a></li>
-                <li><a href="../paginas/contacto.html">Contacto</a></li>
-            </ul>
-        </section>
-
-        <!-- Mapa -->
-        <section class="mapa">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18567.739977219757!2d-58.52021284503937!3d-34.64602166903936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9b3f2b00a4d%3A0x9521bcb70026765!2sAv.%20Rivadavia%2010000%2C%20C1407%20IUB%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1654558904066!5m2!1ses!2sar"
-                width="150" height="150" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <p>Rivadavia XXXXX, Liniers, XXXX, Buenos Aires, Argentina.</p>
-        </section>
-
-        <!--Formulario de suscripción newsletter-->
-        <section class="footer_newsletter">
-
-            <form action="" method="" enctype="application/x-www-form-urlencoded">
-                <label for="email">¡Suscribite a nuestro newsletter! ¡Recibi ofertas exclusivas!</label>
-                <br>
-                <input type="email" name="email" id="email" placeholder="Email">
-                <input type="submit" value="Enviar">
-            </form>
-        </section>
-
-        <!-- Derechos -->
-        <section class="derechos">
-
-            <div class="derechos_texto">
-                <p>2022 Cubejoyas | Diseño y desarrollo por Argenis | Todos los derechos reservados</p>
+        <div class="container-fluid">
+            <!-- menu, mapa y newsletter -->
+            <div class="row">.
+                <!-- menu -->
+                <div class="col-md-4 col-sm-6">
+                    <section class="footer_menu">
+                        <ul>
+                            <li><a href="../index.html">Inicio</a></li>
+                            <li><a href="../paginas/catalogo.html">Catalogo</a></li>
+                            <li><a href="../paginas/quienes-somos.html">Quienes Somos</a></li>
+                            <li><a href="../paginas/clientes.html">Clientes</a></li>
+                            <li><a href="../paginas/contacto.html">Contacto</a></li>
+                        </ul>
+                    </section>
+                </div>
+                <!-- mapa -->
+                <div class="col-md-4 col-sm-5">
+                    <section class="mapa">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18567.739977219757!2d-58.52021284503937!3d-34.64602166903936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9b3f2b00a4d%3A0x9521bcb70026765!2sAv.%20Rivadavia%2010000%2C%20C1407%20IUB%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1654558904066!5m2!1ses!2sar"
+                            width="150" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <p>Rivadavia XXXXX, Liniers, XXXX, Buenos Aires, Argentina.</p>
+                    </section>
+                </div>
+                <!-- newsletter -->
+                <div class="col-md-3 col-sm-12">
+                    <section class="footer_newsletter">
+                        <form action="" method="" enctype="application/x-www-form-urlencoded">
+                            <label for="email">¡Suscribite a nuestro newsletter! ¡Recibi ofertas exclusivas!</label>
+                            <br>
+                            <input type="email" name="email" id="email" placeholder="Email">
+                            <input type="submit" value="Enviar">
+                        </form>
+                    </section>
+                </div>
             </div>
 
-        <!--Logo redes-->
-        <div class="redes">
-            <a href="https://www.facebook.com">
-                <img src="../multimedia/facebook___a6a671a9dd69fc37e4a09d971d19cbd5.svg" alt="Facebook" title="Facebook">
-            </a>
-            <a href="https://www.instagram.com">
-                <img src="../multimedia/instagram___22ed4108400f0b62e45d532bd579e75c.svg" alt="Instagram" title="Whatsapp">
-            </a>
+
         </div>
-        </section>
+
+        <!-- derechos y redes -->
+        <div class="container-fluid">
+            <div class="row">
+                <!-- derechos -->
+                <div class="derechos_texto col-md-10">
+                    <p>2022 Cubejoyas | Diseño y desarrollo por Argenis | Todos los derechos reservados</p>
+                </div>
+                <!-- redes -->
+                <div class="redes col-md-2">
+                    <a href="https://www.facebook.com">
+                        <img src="../multimedia/facebook___a6a671a9dd69fc37e4a09d971d19cbd5.svg" alt="Facebook"
+                            title="Facebook">
+                    </a>
+                    <a href="https://www.instagram.com">
+                        <img src="../multimedia/instagram___22ed4108400f0b62e45d532bd579e75c.svg" alt="Instagram"
+                            title="Whatsapp">
+                    </a>
+                </div>
+            </div>
+        </div>
 
     </footer>
 
@@ -158,6 +223,9 @@
     <script>
         AOS.init();
     </script>
+
+    <!-- Script Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 </body>
 
