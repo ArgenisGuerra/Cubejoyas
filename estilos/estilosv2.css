@@ -1,0 +1,47 @@
+h1{
+    text-align: center;
+    font-weight: bold;
+}
+
+ul li{
+    list-style: none;
+}
+
+.carousel-item img{
+    padding: 10%;
+}
+
+.notificaciones{
+    text-align: center;
+}
+
+
+.container-fluid{
+    text-align: center;
+}
+
+.taller{
+    overflow: hidden;
+}
+
+.cliente div div img{
+    height: 340px;
+}
+
+.texto_cliente{
+    padding: 5%;
+}
+
+.imagen_cliente{
+    padding: 2%;
+}
+
+.catalogo div article img{
+    width: 300px;
+    height: 300px;
+    padding: 2%;
+}
+
+.contenedor_cotizacion{
+    padding: 20px;
+}
