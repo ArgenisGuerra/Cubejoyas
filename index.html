@@ -25,43 +25,20 @@
             </p>
         </div>
 
-        <!-- Logo -->
-        <div class="logo">
-            <a href="index.html">
-                <img src="multimedia/logo-cubejoyas.jpg" alt="CubeJoyas" title="logo">
-            </a>
-        </div>
-
-        <!-- Menu -->
-        <!-- <nav class="menu">
-            <ul class="menu_ul">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="paginas/catalogo.html">Catalogo</a>
-                    <ul class="submenu_ul">
-                        <li><a href="">Aros de boda</a></li>
-                        <li><a href="">Anillos de compromiso</a></li>
-                        <li><a href="">Anillos de graduación</a></li>
-                    </ul>
-                </li>
-                <li><a href="paginas/quienes-somos.html">Quienes Somos</a></li>
-                <li><a href="paginas/clientes.html">Clientes</a></li>
-                <li><a href="paginas/contacto.html">Contacto</a></li>
-            </ul>
-        </nav> -->
-        
+       
         <!-- Menu bootstrap -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
                     <img src="multimedia/logo-cubejoyas.jpg" alt="">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler navbar-light bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                            <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="paginas/quienes-somos.html">Nosotros</a>
@@ -92,22 +69,35 @@
                 </div>
             </div>
         </nav>
+        <hr>
 
-
-        <!-- Buscador -->
-        <div>
-
-        </div>
     </header>
 
-    <!-- Banner -->
-    <main class="mainindex">
-        <section class="banner animate__animated animate__fadeIn">
-            <article>
-                <img src="multimedia/banner-principal-cubejoyas.png" alt="Cubejoyas Banner"
-                    title="Cubejoyas Banner">
-            </article>
-        </section>
+    <main class="mainindex animate__animated animate__backInRight">
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="multimedia/banner-principal-cubejoyas.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="multimedia/banner-principal-cubejoyas.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="multimedia/banner-principal-cubejoyas.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
 
         <!-- Categorias -->
         <section class="categorias">

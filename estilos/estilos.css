@@ -11,15 +11,22 @@ html{
 }
 
 body{
-    /* background-color: #FFFDF7; */
-    background-image: linear-gradient(#FFFDF7, #fce8ae);
-    font-family:'Times New Roman', Times, serif;
+    background-image: linear-gradient(rgb(248,249,250);#fce8ae);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.8rem;
-    
 }
 
 h1{
     margin: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+ul li{
+    list-style: none;
+}
+
+.container-fluid{
     text-align: center;
 }
 
@@ -27,12 +34,12 @@ h1{
 
 header{
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: repeat(2, auto);
+    grid-template-columns: 100%;
+    grid-template-rows: 25px auto;
     gap: 0px 0px;
     grid-template-areas:
-    "notificaciones notificaciones notificaciones"
-    "logo menu buscador";
+    "notificaciones"
+    "menu";
 }
 
 .notificaciones{
@@ -40,8 +47,6 @@ header{
     background-color: #99D6EA;
     text-align: center;
     font-weight: bold;
-    padding: 4px;
-
 }
 
 .notificaciones p{
@@ -64,28 +69,20 @@ header{
     }
 }
 
-.logo{
-    grid-area: logo;
-    justify-self: center;
-}
 
-.logo img{
-    height: 150px;
-    width: 150px;  
-}
+
 
 /* Tablet RD - Header */
 
 @media screen and (max-width: 768px){
     header{
         display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 0.3fr 0.5fr 2fr;
+        grid-template-columns: 100%;
+        grid-template-rows: 25px auto;
         gap: 0px 0px;
         grid-template-areas:
-        "notificaciones notificaciones"
-        "logo buscador"
-        "menu menu";
+        "notificaciones"
+        "menu";
     }
 }
 
@@ -94,62 +91,58 @@ header{
 @media screen and (max-width: 480px){
     header{
         display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: repeat(3, auto);
+        grid-template-columns: 100%;
+        grid-template-rows: 25px auto;
         gap: 0px 0px;
         grid-template-areas:
-        "notificaciones notificaciones"
-        "logo buscador"
-        "menu menu";
+        "notificaciones"
+        "menu";
     }
 
-    .logo img{
+    .navbar-brand img{
         height: 100px;
         width: 100px;  
+    }
+    .notificaciones{
+        font-size: 1.4rem;
     }
 }
 
 /* ENCABEZADO > MENU  */
 
-.menu{
-    grid-area: menu;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    position: relative;
-    z-index: 1000;
+
+.navbar-brand img{
+    height: 120px;
+    width: 120px;  
 }
 
-.menu_ul{
-    list-style:none;
+.navbar{
     font-size: 2rem;
-    font-weight: bold;
-    text-align: center;
-    padding: 2.5rem;
-    border-top: solid 2px black;
-    border-bottom: solid 2px black;
+    grid-area: menu;
+    z-index: 1000;
+
 }
 
-.menu_ul li{
-    display: inline-block;
-    padding: 0.8rem 1.2rem;
-    position: relative;
+.nav-link{
+    color: black;
 }
 
-.submenu_ul{
-    position: absolute;
-    display: none;
-    width: 15rem;
-    top: 3rem;
+.nav-link:hover{
+    color: black;
 }
 
-.submenu_ul li{
-    display: block;
-    background-color: #FFFDF7;
+.navbar-nav li a{
+    transition: font-size 1s;
 }
 
-.menu_ul li:hover .submenu_ul{
-    display: block;
+.dropdown-menu{
+    font-size: 2rem;
 }
+
+.navbar-nav li a:hover{
+    font-size: 2.5rem;
+}
+
 
 
 /* ESTILOS LINKS */
@@ -164,39 +157,8 @@ a:hover{
     font-weight: bold;
     font-size: 2.5rem;
     text-decoration:underline 0.25rem;
-    color: #FDC921;
+    color: black;
 }
-
-
-/* BUSCADOR */
-.buscador{
-    grid-area: buscador;
-    display: grid;
-    grid-template-columns: 80% 10%;
-    grid-template-rows: 100%;
-    grid-template-areas: 
-    "buscadortexto buscador_btn";
-    align-items: center;
-}
-
-.buscadortexto{
-    grid-area: buscadortexto;
-    font-size: 2.5rem;
-    width: 80%;
-    height: 50px;
-    justify-self: right;
-    align-items: right;
-    padding: 25px;
-    margin: 15px;
-}
-
-.buscador_btn{
-    grid-area: buscador_btn;
-    width: 50px;
-    height: 50px;
-    justify-self: left;
-}
-
 
 /* ENCABEZADO (End) */
 
@@ -209,21 +171,20 @@ a:hover{
     grid-template-rows: repeat(5, auto);
     gap: 0px 0px;
     grid-template-areas:
-    "banner"
+    "carousel"
     "categorias"
     "novedades_titulo"
     "novedades"
     "cotizacion";
 }
 
-.banner{
-    grid-area: banner;
+.carousel{
+    grid-area: carousel;
     text-align: center;
 }
 
-.banner img{
-    width: 90%;
-    height: 90%;
+.carousel-item img{
+    padding: 3%;
 }
 
 .categorias{
@@ -237,6 +198,7 @@ a:hover{
 
 .categorias img{
     transition: all 2s;
+    border: solid 1px black;
 }
 
 .categorias img:hover{
@@ -246,7 +208,6 @@ a:hover{
 .novedades_titulo{
     grid-area: novedades_titulo;
 }
-
 
 .novedades{
     grid-area: novedades;
@@ -259,6 +220,7 @@ a:hover{
 
 .novedades img{
     transition: all 2s;
+    border: solid 1px black;
 }
 
 .novedades img:hover{
@@ -384,22 +346,19 @@ footer{
 
 .maincatalogo{
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 100%;
     grid-template-rows: repeat(3, auto);
     gap: 0px 0px;
     grid-template-areas: 
-    "catalogo_titulo catalogo_titulo"
-    "filtros productos"
-    "cotizacion cotizacion";
+    "catalogo_titulo"
+    "productos"
+    "cotizacion";
 }
 
 .catalogo_titulo{
     grid-area: catalogo_titulo;
 }
 
-.filtros{
-    grid-area: filtros;
-}
 
 .productos{
     grid-area: productos;
@@ -407,9 +366,10 @@ footer{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    text-align: center;
 }
 
-.productos article{
+.productos article img{
     width: 350px;
     height: 340px;
     padding: 1%;
@@ -570,8 +530,9 @@ footer{
 }
 
 .taller article div img{
-    width: 400px;
+    width: 300px;
     height: auto;
+    overflow: hidden;
 }
 
 
