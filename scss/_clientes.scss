@@ -1,0 +1,31 @@
+.mainclientes{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, auto);
+    gap: 0px 0px;
+    grid-template-areas: 
+    "clientes_titulo"
+    "cliente"
+    "cotizacion"
+}
+
+.cliente{
+    grid-area: cliente;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    article{
+        height: auto;
+        width: 350px;
+        text-align: center;
+        div{
+            img{
+                width: 100%;
+                height: 340px;
+                padding: 1%;
+                text-align: center;
+            }
+        }
+    }
+}

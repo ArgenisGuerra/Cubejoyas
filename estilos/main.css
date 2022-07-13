@@ -1,0 +1,404 @@
+.maincatalogo {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(3, auto);
+  gap: 0px 0px;
+  grid-template-areas: "catalogo_titulo" "productos" "cotizacion"; }
+
+.catalogo_titulo {
+  grid-area: catalogo_titulo; }
+
+.productos {
+  grid-area: productos;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center; }
+  .productos article img {
+    width: 350px;
+    height: 340px;
+    padding: 1%;
+    text-align: center; }
+  .productos iframe {
+    transition: all 2s; }
+    .productos iframe:hover {
+      transform: scale(1.2, 1.2); }
+
+.filtros {
+  list-style: none;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 2.5rem; }
+  .filtros li {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+
+/* Tablet RD - Pagina catalogo */
+@media screen and (max-width: 768px) {
+  .maincatalogo {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, auto);
+    gap: 0px 0px;
+    grid-template-areas: "catalogo_titulo" "filtros" "productos" "cotizacion"; }
+  .filtros {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; } }
+
+/* Celular RD - Pagina catalogo */
+@media screen and (max-width: 468px) {
+  .maincatalogo {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, auto);
+    gap: 0px 0px;
+    grid-template-areas: "catalogo_titulo" "filtros" "productos" "cotizacion"; }
+  .filtros {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center; } }
+
+.mainclientes {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(3, auto);
+  gap: 0px 0px;
+  grid-template-areas: "clientes_titulo" "cliente" "cotizacion"; }
+
+.cliente {
+  grid-area: cliente;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  .cliente article {
+    height: auto;
+    width: 350px;
+    text-align: center; }
+    .cliente article div img {
+      width: 100%;
+      height: 340px;
+      padding: 1%;
+      text-align: center; }
+
+.maincontacto {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto;
+  gap: 0px 0px;
+  grid-template-areas: "formulario-titulo" "formulario"; }
+
+.formulario-titulo {
+  grid-area: formulario-titulo; }
+
+.formulario {
+  grid-area: formulario;
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 5%; }
+  .formulario input {
+    font-size: 2.5rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: solid 1px black;
+    width: 300px; }
+  .formulario select {
+    font-size: 2.5rem;
+    margin: 10px;
+    border: solid 1px black; }
+  .formulario textarea {
+    margin: 10px;
+    border: solid 1px black;
+    width: 50%; }
+
+/* Tablet RD - Pagina contacto */
+@media screen and (max-width: 768px) {
+  .formulario {
+    font-size: 2.5rem; }
+    .formulario textarea {
+      width: 70%; } }
+
+/* Celular RD - Pagina contacto */
+@media screen and (max-width: 320px) {
+  .formulario {
+    margin: 10px; }
+    .formulario input {
+      width: 98%; }
+    .formulario textarea {
+      width: 98%; }
+    .formulario label {
+      font-size: 2.5rem; } }
+
+.main-nosotros {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(4, auto);
+  gap: 0px 0px;
+  grid-template-areas: "nosotros-titulo" "video" "taller" "cotizacion"; }
+
+.nosotros-titulo {
+  grid-area: nosotros-titulo; }
+
+.video {
+  grid-area: video;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center; }
+  .video article {
+    width: 500px;
+    text-align: center; }
+
+.taller {
+  grid-area: taller;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center; }
+  .taller article {
+    width: 500px;
+    text-align: center; }
+    .taller article div img {
+      width: 300px;
+      height: auto;
+      overflow: hidden; }
+
+html {
+  font-size: 62.5%; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-image: linear-gradient(white, #FFFDF7);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.8rem; }
+
+h1 {
+  margin: 1rem;
+  text-align: center;
+  font-weight: bold; }
+
+ul li {
+  list-style: none; }
+
+.container-fluid {
+  text-align: center; }
+
+a {
+  color: black;
+  text-decoration-line: none;
+  transition: font-size 1s; }
+  a:hover {
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-decoration: underline 0.25rem;
+    color: black; }
+
+/* ENCABEZADO (Start) */
+header {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 25px auto;
+  gap: 0px 0px;
+  grid-template-areas: "notificaciones" "menu"; }
+
+.notificaciones {
+  grid-area: notificaciones;
+  background-color: #99D6EA;
+  text-align: center;
+  font-weight: bold; }
+  .notificaciones p {
+    animation-name: atenuar;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 3s;
+    animation-delay: 0s; }
+
+@keyframes atenuar {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+/* Celular RD - Header */
+@media screen and (max-width: 480px) {
+  header {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25px auto;
+    gap: 0px 0px;
+    grid-template-areas: "notificaciones" "menu"; }
+  .navbar-brand img {
+    height: 100px;
+    width: 100px; }
+  .notificaciones {
+    font-size: 1.4rem; } }
+
+/* ENCABEZADO > MENU  */
+.navbar-brand img {
+  height: 120px;
+  width: 120px; }
+
+.navbar {
+  font-size: 2rem;
+  grid-area: menu;
+  z-index: 1000; }
+
+.nav-link {
+  color: black; }
+  .nav-link:hover {
+    color: black; }
+
+.navbar-nav li a {
+  transition: font-size 1s; }
+  .navbar-nav li a:hover {
+    font-size: 2.5rem; }
+
+.dropdown-menu {
+  font-size: 2rem; }
+
+/* ENCABEZADO (End) */
+/* MAIN INDEX (Start) */
+.mainindex {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(5, auto);
+  gap: 0px 0px;
+  grid-template-areas: "carousel" "categorias" "novedades_titulo" "novedades" "cotizacion"; }
+
+.carousel {
+  grid-area: carousel;
+  text-align: center; }
+
+.carousel-item img {
+  padding: 3%; }
+
+.categorias {
+  grid-area: categorias;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px; }
+  .categorias img {
+    transition: all 2s;
+    border: solid 1px black; }
+    .categorias img:hover {
+      transform: scale(1.3, 1.3); }
+
+.novedades_titulo {
+  grid-area: novedades_titulo; }
+
+.novedades {
+  grid-area: novedades;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px; }
+  .novedades img {
+    transition: all 2s;
+    border: solid 1px black; }
+    .novedades img:hover {
+      transform: scale(1.3, 1.3); }
+
+.cotizacion {
+  grid-area: cotizacion;
+  text-align: center;
+  margin: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center; }
+
+.cotizacion_btn {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 2rem; }
+
+/* FOOTER */
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(2, auto);
+  gap: 0px 0px;
+  grid-template-areas: "footer_menu mapa footer_newsletter" "derechos derechos derechos";
+  border-top: solid 2px black;
+  background-color: #99D6EA;
+  padding: 10px; }
+
+.footer_menu {
+  grid-area: footer_menu;
+  font-size: 1.8rem;
+  font-weight: bold;
+  width: 100%;
+  height: auto;
+  text-align: center; }
+
+.mapa {
+  grid-area: mapa;
+  font-weight: bold;
+  text-align: center; }
+
+.footer_newsletter {
+  grid-area: footer_newsletter;
+  font-weight: bold;
+  text-align: center; }
+
+.derechos {
+  grid-area: derechos;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 0.2fr;
+  gap: 0px 0px;
+  grid-template-areas: "derechos_texto redes"; }
+
+.derechos_texto {
+  grid-area: derechos_texto;
+  text-align: center;
+  font-weight: bold; }
+
+.redes {
+  grid-area: redes;
+  text-align: center; }
+
+/* Tablet RD - Footer */
+@media screen and (max-width: 768px) {
+  footer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(3, auto);
+    gap: 0px 0px;
+    grid-template-areas: "footer_menu mapa" "footer_newsletter footer_newsletter" "derechos derechos";
+    border-top: solid 2px black;
+    background-color: #99D6EA;
+    padding: 10px; } }
+
+/* Celular RD - Footer */
+@media screen and (max-width: 468px) {
+  footer {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, auto);
+    gap: 0px 0px;
+    grid-template-areas: "footer_menu" "mapa" "footer_newsletter" "derechos";
+    border-top: solid 2px black;
+    background-color: #99D6EA;
+    padding: 10px; } }

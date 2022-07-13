@@ -1,0 +1,65 @@
+.maincontacto{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    gap: 0px 0px;
+    grid-template-areas:
+    "formulario-titulo"
+    "formulario";
+}
+
+.formulario-titulo{
+    grid-area: formulario-titulo;
+}
+
+.formulario{
+    grid-area: formulario;
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 5%;
+    input{
+        font-size: 2.5rem;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: solid 1px black;
+        width: 300px;
+    }
+    select{
+        font-size: 2.5rem;
+        margin: 10px;
+        border: solid 1px black;
+    }
+    textarea{
+        margin: 10px;
+        border: solid 1px black;
+        width: 50%;
+    }
+}
+
+/* Tablet RD - Pagina contacto */
+
+@media screen and (max-width: 768px){
+    .formulario{
+        font-size: 2.5rem;
+        textarea{
+            width: 70%;
+        }
+    }
+}
+
+/* Celular RD - Pagina contacto */
+
+@media screen and (max-width: 320px){
+    .formulario{
+        margin: 10px;
+        input{
+            width: 98%;
+        }
+        textarea{
+            width: 98%;
+        }
+        label{
+            font-size: 2.5rem;
+        }
+    }
+}

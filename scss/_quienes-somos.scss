@@ -1,0 +1,50 @@
+.main-nosotros{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, auto);
+    gap: 0px 0px;
+    grid-template-areas:
+    "nosotros-titulo"
+    "video"
+    "taller"
+    "cotizacion";
+}
+
+.nosotros-titulo{
+    grid-area: nosotros-titulo;
+}
+
+.video{
+    grid-area: video;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    article{
+        width: 500px;
+        text-align: center;
+    }
+}
+
+.taller{
+    grid-area: taller;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    article{
+        width: 500px;
+        text-align: center;
+        div{
+            img{
+                width: 300px;
+                height: auto;
+                overflow: hidden;
+            }
+        }
+    }
+}
+
