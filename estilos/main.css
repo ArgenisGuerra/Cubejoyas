@@ -118,6 +118,15 @@
     border: solid 1px black;
     width: 50%; }
 
+.input, .btn_enviar, .btn_reestablecer {
+  border: solid 1px black; }
+
+.btn_enviar {
+  background-color: green; }
+
+.btn_reestablecer {
+  background-color: grey; }
+
 /* Tablet RD - Pagina contacto */
 @media screen and (max-width: 768px) {
   .formulario {
@@ -186,7 +195,7 @@ body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 1.8rem; }
 
-h1 {
+h1, h2 {
   margin: 1rem;
   text-align: center;
   font-weight: bold; }
@@ -279,7 +288,7 @@ header {
   grid-template-columns: 100%;
   grid-template-rows: repeat(5, auto);
   gap: 0px 0px;
-  grid-template-areas: "carousel" "categorias" "novedades_titulo" "novedades" "cotizacion"; }
+  grid-template-areas: "carousel" "categorias" "novedades_titulo" "novedades" "botones_index"; }
 
 .carousel {
   grid-area: carousel;
@@ -294,6 +303,7 @@ header {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
   padding: 20px; }
   .categorias img {
     transition: all 2s;
@@ -310,6 +320,7 @@ header {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
   padding: 20px; }
   .novedades img {
     transition: all 2s;
@@ -317,15 +328,42 @@ header {
     .novedades img:hover {
       transform: scale(1.3, 1.3); }
 
+.botones_index {
+  grid-area: botones_index;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap; }
+
 .cotizacion {
-  grid-area: cotizacion;
   text-align: center;
   margin: 1rem;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center; }
+  .cotizacion input {
+    background-color: #6798C0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 2rem; }
+
+.productos {
+  text-align: center;
+  margin: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; }
+  .productos input {
+    background-color: #99D6EA;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 2rem; }
 
 .cotizacion_btn {
   font-family: 'Times New Roman', Times, serif;

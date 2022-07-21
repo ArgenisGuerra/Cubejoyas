@@ -36,6 +36,21 @@
     }
 }
 
+.input{
+    border: solid 1px black;
+}
+
+.btn_enviar{
+    @extend .input;
+    background-color: green;
+}
+
+.btn_reestablecer{
+    @extend .input;
+    background-color: grey;
+}
+
+
 /* Tablet RD - Pagina contacto */
 
 @media screen and (max-width: 768px){

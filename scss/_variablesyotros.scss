@@ -1,0 +1,39 @@
+// VARIABLES
+
+$colorPrincipal: #FFFDF7;
+$colorSecundario: white;
+$colorTerciario: #99D6EA;
+$colorCuaternario:#6798C0;
+$colorQuinario:#FDD85D;
+
+// MAPAS
+
+$estilos_base:(
+    base-background:linear-gradient($colorSecundario,$colorPrincipal),
+    base-font-size: 1.8rem,
+);
+
+
+$encabezado:(
+    h1:#000000,
+    h2:#999999,
+    h3: $colorCuaternario,
+);
+
+// MIXINS
+
+@mixin flex-row-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+@mixin flex($display,$wrap,$direction,$justify,$align){
+    display:$display;
+    flex-wrap: $wrap;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
