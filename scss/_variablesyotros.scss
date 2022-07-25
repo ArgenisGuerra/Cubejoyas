@@ -1,23 +1,24 @@
 // VARIABLES
 
-$colorPrincipal: #FFFDF7;
-$colorSecundario: white;
-$colorTerciario: #99D6EA;
-$colorCuaternario:#6798C0;
-$colorQuinario:#FDD85D;
+$color1:#FFFFFF;
+$color2:#929292;
+$color3:#555555;
+$color4:#f6e290;
+$color5:#f6f1eb;
 
 // MAPAS
 
 $estilos_base:(
-    base-background:linear-gradient($colorSecundario,$colorPrincipal),
+    // base-background: linear-gradient($colorTerciario,$colorQuinario),
+    base-background:#FFFFFF,
     base-font-size: 1.8rem,
+    base-color:#555555
 );
 
 
 $encabezado:(
     h1:#000000,
     h2:#999999,
-    h3: $colorCuaternario,
 );
 
 // MIXINS

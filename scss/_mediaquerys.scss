@@ -1,0 +1,145 @@
+// 1024PX - LAPTOP
+
+@media screen and (max-width: 1024px){
+    .categorias{
+        article{
+            img{
+                height: auto;
+                width: 300px;
+            }
+        }        
+    }
+
+    .novedades{
+        article{
+            padding-left:50px;
+            padding-right:50px;
+        }
+        
+    }
+
+    .iconos{
+        article{
+            margin-top: 60px;
+            width: 150px;
+            height: 250px;
+            div{
+                img{
+                width: auto;
+                height: 120px;
+                }
+            }
+        }
+    }
+
+}
+
+// 768PX - TABLET
+
+@media screen and (max-width: 768px){
+    .categorias{        
+        article{
+            width: 220px;
+            h1{
+                width:100%;                
+            }
+            img{
+                width: 220px;
+                height: 220px;
+            }
+        }
+    }
+
+    .novedades{
+        padding:1px;
+        article{
+            padding: 1px;
+        }
+    }
+
+    .iconos-nomostrar{
+        display: none;
+    }
+
+    footer{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(3, auto);
+        gap: 0px 0px;
+        grid-template-areas:
+        "footer_menu mapa"
+        "footer_newsletter footer_newsletter"
+        "derechos derechos";
+        background-color: $color5;
+        padding: 10px;
+    }
+}
+
+// 320 PX - MOBILE
+
+@media screen and (max-width: 320px){
+    header{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 25px auto;
+        gap: 0px 0px;
+        grid-template-areas:
+        "notificaciones"
+        "menu";
+    }
+
+    .navbar-brand img{
+        height: 100px;
+        width: 100px;  
+    }
+    .notificaciones{
+        font-size: 1.4rem;
+    }
+
+
+    .categorias{
+        article{
+            width: 300px;
+            img{
+                width: 300px;
+                height: 300px;
+            }
+        }
+    }
+
+    .novedades{
+        img{
+            width: auto;
+            height: 150px;
+        }
+    }
+
+    .iconos{
+        border-top: 10px;
+        padding: 5px;
+        article{
+            width:150px
+        }
+    }
+
+    .cotizacion{
+        article{
+            font-size:2rem;
+        }
+    }
+
+    footer{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4, auto);
+        gap: 0px 0px;
+        grid-template-areas:
+        "footer_menu"
+        "mapa"
+        "footer_newsletter"
+        "derechos";
+        background-color: $color5;
+        padding: 10px;
+    }
+
+}
