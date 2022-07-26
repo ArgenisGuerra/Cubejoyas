@@ -76,6 +76,7 @@ header{
     text-align: center;
     font-weight: bold;
     padding-top: 2px;
+    font-size: 2rem;
     p{
         animation-name:atenuar;
         animation-iteration-count: infinite;
@@ -144,6 +145,7 @@ header{
         font-size: 2.2rem;
         background-color: $color2;
         color:$color1;
+        border: none;
         &:hover{
             background-color: $color6;
             color:$color3;

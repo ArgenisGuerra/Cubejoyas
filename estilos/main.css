@@ -228,7 +228,8 @@ header {
   background-color: #c7e3ef;
   text-align: center;
   font-weight: bold;
-  padding-top: 2px; }
+  padding-top: 2px;
+  font-size: 2rem; }
   .notificaciones p {
     animation-name: atenuar;
     animation-iteration-count: infinite;
@@ -268,7 +269,8 @@ header {
 .d-flex button {
   font-size: 2.2rem;
   background-color: #929292;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  border: none; }
   .d-flex button:hover {
     background-color: #e0caa7;
     color: #555555; }
