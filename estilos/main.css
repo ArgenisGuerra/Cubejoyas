@@ -121,11 +121,9 @@
 .input, .btn_enviar, .btn_reestablecer {
   border: solid 1px black; }
 
-.btn_enviar {
-  background-color: green; }
-
-.btn_reestablecer {
-  background-color: grey; }
+.btn_enviar:hover, .btn_reestablecer:hover {
+  background-color: #e0caa7;
+  text-decoration: underline 0.25rem; }
 
 /* Tablet RD - Pagina contacto */
 @media screen and (max-width: 768px) {
@@ -227,7 +225,7 @@ header {
 
 .notificaciones {
   grid-area: notificaciones;
-  background-color: #f6f1eb;
+  background-color: #c7e3ef;
   text-align: center;
   font-weight: bold;
   padding-top: 2px; }
@@ -249,18 +247,34 @@ header {
 /* ENCABEZADO > MENU  */
 .navbar-brand img {
   height: 120px;
-  width: 120px; }
+  width: 120px;
+  border-radius: 65px; }
 
 .navbar {
   font-size: 2.2rem;
   grid-area: menu;
   z-index: 100;
-  text-align: center; }
+  text-align: center;
+  background-image: url(../multimedia/fondo-banner.png); }
   .navbar a:hover {
     font-size: 2.7rem; }
 
 .dropdown-menu {
   font-size: 2rem; }
+
+.d-flex input {
+  font-size: 2.2rem; }
+
+.d-flex button {
+  font-size: 2.2rem;
+  background-color: #929292;
+  color: #FFFFFF; }
+  .d-flex button:hover {
+    background-color: #e0caa7;
+    color: #555555; }
+
+.navbar-toggler-icon {
+  font-size: 2.2rem; }
 
 /* ENCABEZADO (End) */
 /* MAIN INDEX (Start) */
@@ -275,7 +289,18 @@ header {
   grid-area: carousel;
   text-align: center;
   border-top: solid 0.01px #555555;
-  border-bottom: solid 0.01px #555555; }
+  border-bottom: solid 0.01px #555555;
+  color: #555555; }
+
+.carousel-control-prev span, .carousel-control-next span {
+  background-color: #555555;
+  font-size: 2.2rem;
+  width: 30px;
+  height: 30px; }
+
+.carousel-item img {
+  padding-left: 3%;
+  padding-right: 3%; }
 
 .categorias {
   grid-area: categorias;
@@ -291,7 +316,8 @@ header {
   .categorias article img {
     transition: all 0.5s;
     width: auto;
-    height: 400px; }
+    height: 400px;
+    border-radius: 20px; }
     .categorias article img:hover {
       transform: scale(1.05, 1.05); }
 
@@ -331,14 +357,14 @@ header {
     width: 200px;
     height: 250px;
     text-align: center;
-    background-color: #f6f1eb;
+    background-color: #c7e3ef;
     border-radius: 50px; }
     .iconos article div img {
       border-radius: 50px;
       width: auto;
       height: 150px;
       transform: translate(0, -50px);
-      background-color: #f6e290;
+      background-color: #e0caa7;
       padding: 20px; }
     .iconos article p {
       transform: translate(0, -25px);
@@ -365,7 +391,7 @@ header {
     transition: font-size 0.5s;
     transition: background-color 0.5s; }
     .cotizacion article:hover {
-      background-color: #f6e290;
+      background-color: #e0caa7;
       text-decoration: underline 0.25rem; }
       .cotizacion article:hover a {
         font-weight: normal;
@@ -395,7 +421,7 @@ footer {
   grid-template-rows: repeat(2, auto);
   gap: 0px 0px;
   grid-template-areas: "footer_menu mapa footer_newsletter" "derechos derechos derechos";
-  background-color: #f6f1eb;
+  background-color: #c7e3ef;
   padding: 10px; }
 
 .footer_menu {
@@ -467,7 +493,7 @@ footer {
     grid-template-rows: repeat(3, auto);
     gap: 0px 0px;
     grid-template-areas: "footer_menu mapa" "footer_newsletter footer_newsletter" "derechos derechos";
-    background-color: #f6f1eb;
+    background-color: #c7e3ef;
     padding: 10px; } }
 
 @media screen and (max-width: 320px) {
@@ -503,5 +529,5 @@ footer {
     grid-template-rows: repeat(4, auto);
     gap: 0px 0px;
     grid-template-areas: "footer_menu" "mapa" "footer_newsletter" "derechos";
-    background-color: #f6f1eb;
+    background-color: #c7e3ef;
     padding: 10px; } }

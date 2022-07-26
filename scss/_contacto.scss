@@ -42,12 +42,15 @@
 
 .btn_enviar{
     @extend .input;
-    background-color: green;
+    &:hover{
+        background-color: $color6;
+        text-decoration: underline 0.25rem;
+    }
 }
 
 .btn_reestablecer{
     @extend .input;
-    background-color: grey;
+    @extend .btn_enviar;
 }
 
 
