@@ -1,3 +1,9 @@
+.nosotros-titulo{
+    grid-area: nosotros-titulo;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
 .main-nosotros{
     display: grid;
     grid-template-columns: 100%;
@@ -8,43 +14,50 @@
     "video"
     "taller"
     "cotizacion";
-}
 
-.nosotros-titulo{
-    grid-area: nosotros-titulo;
-}
-
-.video{
-    grid-area: video;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    article{
-        width: 500px;
-        text-align: center;
+    h2{
+        margin-top: 40px;
+        margin-bottom: 30px;
     }
-}
 
-.taller{
-    grid-area: taller;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: center;
-    align-items: center;
-    article{
-        width: 500px;
-        text-align: center;
-        div{
-            img{
-                width: 300px;
-                height: auto;
-                overflow: hidden;
+    .video{
+        grid-area: video;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        article{
+            width: 500px;
+            text-align: center;
+        }
+    }
+
+    .taller{
+        grid-area: taller;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: center;
+        align-items: center;
+        article{
+            width: 500px;
+            text-align: center;
+            div{
+                img{
+                    width: 300px;
+                    height: auto;
+                    overflow: hidden;
+                }
             }
         }
     }
 }
+
+
+
+
+
+
 

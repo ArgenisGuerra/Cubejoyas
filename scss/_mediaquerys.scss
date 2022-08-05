@@ -63,21 +63,52 @@
 
     footer{
         display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: repeat(3, auto);
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4, auto);
         gap: 0px 0px;
         grid-template-areas:
-        "footer_menu mapa"
-        "footer_newsletter footer_newsletter"
-        "derechos derechos";
+        "footer_menu"
+        "mapa"
+        "footer_newsletter "
+        "derechos";
         background-color: $color5;
         padding: 10px;
     }
+
+    .maincatalogo{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4,auto);
+        gap: 0px 0px;
+        grid-template-areas: 
+        "catalogo_titulo"
+        "filtros"
+        "productos"
+        "cotizacion";
+    }
+    
+    .filtros{
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .formulario{
+        font-size: 2.5rem;
+        textarea{
+            width: 70%;
+        }
+    }
 }
 
-// 320 PX - MOBILE
+// 425 PX - MOBILE
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 425px){
+
+    // INDEX 
+
     header{
         display: grid;
         grid-template-columns: 100%;
@@ -95,7 +126,6 @@
     .notificaciones{
         font-size: 1.4rem;
     }
-
 
     .categorias{
         article{
@@ -124,7 +154,7 @@
 
     .cotizacion{
         article{
-            font-size:2rem;
+            font-size:2.5rem;
         }
     }
 
@@ -142,4 +172,58 @@
         padding: 10px;
     }
 
+    // CATALOGO
+
+    .maincatalogo{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4,auto);
+        gap: 0px 0px;
+        grid-template-areas: 
+        "catalogo_titulo"
+        "filtros"
+        "productos"
+        "cotizacion";
+        .productos{
+            article{
+                img{
+                    width: 300px;
+                    height: 290px;
+                }
+            }
+        }
+    }
+    
+
+    // QUIENES SOMOS
+
+    .main-nosotros{
+        section{
+            article{
+                h2{
+                    margin: 20px;
+                }
+                p{
+                    margin: 20px;
+                }
+            }
+        }
+        
+    }
+
+    
+    // CONTACTO
+
+    .formulario{
+        margin: 10px;
+        input{
+            width: 98%;
+        }
+        textarea{
+            width: 98%;
+        }
+        label{
+            font-size: 2.5rem;
+        }
+    }
 }

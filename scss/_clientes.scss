@@ -6,26 +6,39 @@
     grid-template-areas: 
     "clientes_titulo"
     "cliente"
-    "cotizacion"
-}
+    "cotizacion";
 
-.cliente{
-    grid-area: cliente;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    article{
-        height: auto;
-        width: 350px;
-        text-align: center;
-        div{
-            img{
-                width: 100%;
-                height: 340px;
-                padding: 1%;
-                text-align: center;
+    .clientes_titulo{
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
+    .cliente{
+        grid-area: cliente;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        article{
+            height: auto;
+            width: 350px;
+            text-align: center;
+
+            h2{
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            div{
+                img{
+                    width: 100%;
+                    height: 340px;
+                    padding: 1%;
+                    text-align: center;
+                    border-radius: 50px;
+                }
             }
         }
     }
 }
+

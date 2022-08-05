@@ -6,7 +6,9 @@
   grid-template-areas: "catalogo_titulo" "productos" "cotizacion"; }
 
 .catalogo_titulo {
-  grid-area: catalogo_titulo; }
+  grid-area: catalogo_titulo;
+  margin-top: 40px;
+  margin-bottom: 30px; }
 
 .productos {
   grid-area: productos;
@@ -19,7 +21,8 @@
     width: 350px;
     height: 340px;
     padding: 1%;
-    text-align: center; }
+    text-align: center;
+    border-radius: 50px; }
   .productos iframe {
     transition: all 2s; }
     .productos iframe:hover {
@@ -35,58 +38,34 @@
     margin-top: 10px;
     margin-bottom: 10px; }
 
-/* Tablet RD - Pagina catalogo */
-@media screen and (max-width: 768px) {
-  .maincatalogo {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(4, auto);
-    gap: 0px 0px;
-    grid-template-areas: "catalogo_titulo" "filtros" "productos" "cotizacion"; }
-  .filtros {
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around; } }
-
-/* Celular RD - Pagina catalogo */
-@media screen and (max-width: 468px) {
-  .maincatalogo {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(4, auto);
-    gap: 0px 0px;
-    grid-template-areas: "catalogo_titulo" "filtros" "productos" "cotizacion"; }
-  .filtros {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center; } }
-
 .mainclientes {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: repeat(3, auto);
   gap: 0px 0px;
   grid-template-areas: "clientes_titulo" "cliente" "cotizacion"; }
-
-.cliente {
-  grid-area: cliente;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around; }
-  .cliente article {
-    height: auto;
-    width: 350px;
-    text-align: center; }
-    .cliente article div img {
-      width: 100%;
-      height: 340px;
-      padding: 1%;
+  .mainclientes .clientes_titulo {
+    margin-top: 40px;
+    margin-bottom: 30px; }
+  .mainclientes .cliente {
+    grid-area: cliente;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .mainclientes .cliente article {
+      height: auto;
+      width: 350px;
       text-align: center; }
+      .mainclientes .cliente article h2 {
+        margin-top: 20px;
+        margin-bottom: 20px; }
+      .mainclientes .cliente article div img {
+        width: 100%;
+        height: 340px;
+        padding: 1%;
+        text-align: center;
+        border-radius: 50px; }
 
 .maincontacto {
   display: grid;
@@ -96,13 +75,16 @@
   grid-template-areas: "formulario-titulo" "formulario"; }
 
 .formulario-titulo {
-  grid-area: formulario-titulo; }
+  grid-area: formulario-titulo;
+  margin-top: 40px; }
 
 .formulario {
   grid-area: formulario;
   text-align: center;
   font-size: 2.5rem;
   margin: 5%; }
+  .formulario label {
+    width: 120px; }
   .formulario input {
     font-size: 2.5rem;
     margin-top: 10px;
@@ -111,12 +93,17 @@
     width: 300px; }
   .formulario select {
     font-size: 2.5rem;
-    margin: 10px;
-    border: solid 1px black; }
+    border: solid 1px black;
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px; }
   .formulario textarea {
-    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border: solid 1px black;
     width: 50%; }
+  .formulario .mensaje {
+    width: 300px; }
 
 .input, .btn_enviar, .btn_reestablecer {
   border: solid 1px black; }
@@ -125,23 +112,10 @@
   background-color: #e0caa7;
   text-decoration: underline 0.25rem; }
 
-/* Tablet RD - Pagina contacto */
-@media screen and (max-width: 768px) {
-  .formulario {
-    font-size: 2.5rem; }
-    .formulario textarea {
-      width: 70%; } }
-
-/* Celular RD - Pagina contacto */
-@media screen and (max-width: 320px) {
-  .formulario {
-    margin: 10px; }
-    .formulario input {
-      width: 98%; }
-    .formulario textarea {
-      width: 98%; }
-    .formulario label {
-      font-size: 2.5rem; } }
+.nosotros-titulo {
+  grid-area: nosotros-titulo;
+  margin-top: 40px;
+  margin-bottom: 30px; }
 
 .main-nosotros {
   display: grid;
@@ -149,36 +123,34 @@
   grid-template-rows: repeat(4, auto);
   gap: 0px 0px;
   grid-template-areas: "nosotros-titulo" "video" "taller" "cotizacion"; }
-
-.nosotros-titulo {
-  grid-area: nosotros-titulo; }
-
-.video {
-  grid-area: video;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center; }
-  .video article {
-    width: 500px;
-    text-align: center; }
-
-.taller {
-  grid-area: taller;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: center;
-  align-items: center; }
-  .taller article {
-    width: 500px;
-    text-align: center; }
-    .taller article div img {
-      width: 300px;
-      height: auto;
-      overflow: hidden; }
+  .main-nosotros h2 {
+    margin-top: 40px;
+    margin-bottom: 30px; }
+  .main-nosotros .video {
+    grid-area: video;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center; }
+    .main-nosotros .video article {
+      width: 500px;
+      text-align: center; }
+  .main-nosotros .taller {
+    grid-area: taller;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center; }
+    .main-nosotros .taller article {
+      width: 500px;
+      text-align: center; }
+      .main-nosotros .taller article div img {
+        width: 300px;
+        height: auto;
+        overflow: hidden; }
 
 html {
   font-size: 62.5%; }
@@ -194,7 +166,7 @@ body {
   font-size: 1.8rem;
   color: #555555; }
 
-h1, h2 {
+h1, h2, h3 {
   text-align: center;
   font-weight: bold;
   font-size: 3rem; }
@@ -205,11 +177,11 @@ ul li {
 .container-fluid {
   text-align: center; }
 
-a, .navbar-nav li a {
+a, .navbar .navbar-nav li a {
   color: #555555;
   text-decoration-line: none;
   transition: font-size 0.5s; }
-  a:hover, .navbar-nav li a:hover {
+  a:hover, .navbar .navbar-nav li a:hover {
     font-weight: bold;
     font-size: 2.2rem;
     text-decoration: underline 0.25rem;
@@ -246,37 +218,32 @@ header {
     opacity: 1; } }
 
 /* ENCABEZADO > MENU  */
-.navbar-brand img {
-  height: 120px;
-  width: 120px;
-  border-radius: 65px; }
-
 .navbar {
   font-size: 2.2rem;
   grid-area: menu;
   z-index: 100;
   text-align: center;
   background-image: url(../multimedia/fondo-banner.png); }
-  .navbar a:hover {
+  .navbar a:hover, .navbar .navbar-nav li a:hover {
     font-size: 2.7rem; }
-
-.dropdown-menu {
-  font-size: 2rem; }
-
-.d-flex input {
-  font-size: 2.2rem; }
-
-.d-flex button {
-  font-size: 2.2rem;
-  background-color: #929292;
-  color: #FFFFFF;
-  border: none; }
-  .d-flex button:hover {
-    background-color: #e0caa7;
-    color: #555555; }
-
-.navbar-toggler-icon {
-  font-size: 2.2rem; }
+  .navbar .navbar-brand img {
+    height: 120px;
+    width: 120px;
+    border-radius: 65px; }
+  .navbar .navbar-toggler-icon {
+    font-size: 2.2rem; }
+  .navbar .dropdown-menu {
+    font-size: 2rem; }
+  .navbar .d-flex input {
+    font-size: 2.2rem; }
+  .navbar .d-flex button {
+    font-size: 2.2rem;
+    background-color: #929292;
+    color: #FFFFFF;
+    border: none; }
+    .navbar .d-flex button:hover {
+      background-color: #e0caa7;
+      color: #555555; }
 
 /* ENCABEZADO (End) */
 /* MAIN INDEX (Start) */
@@ -293,16 +260,11 @@ header {
   border-top: solid 0.01px #555555;
   border-bottom: solid 0.01px #555555;
   color: #555555; }
-
-.carousel-control-prev span, .carousel-control-next span {
-  background-color: #555555;
-  font-size: 2.2rem;
-  width: 30px;
-  height: 30px; }
-
-.carousel-item img {
-  padding-left: 3%;
-  padding-right: 3%; }
+  .carousel .carousel-control-prev span, .carousel .carousel-control-next span {
+    background-color: #555555;
+    font-size: 2.2rem;
+    width: 30px;
+    height: 30px; }
 
 .categorias {
   grid-area: categorias;
@@ -312,7 +274,7 @@ header {
   justify-content: space-around;
   align-items: center;
   padding: 20px; }
-  .categorias article h1, .categorias article h2 {
+  .categorias article h1, .categorias article h2, .categorias article h3 {
     margin-top: 10px;
     margin-bottom: 15px; }
   .categorias article img {
@@ -325,8 +287,8 @@ header {
 
 .novedades_titulo {
   grid-area: novedades_titulo;
-  margin-top: 10px;
-  margin-bottom: 15px; }
+  margin-top: 100px;
+  margin-bottom: 10px; }
 
 .novedades {
   grid-area: novedades;
@@ -383,7 +345,8 @@ header {
   align-items: center;
   width: auto;
   height: 150px;
-  margin-bottom: 20px; }
+  margin-top: 30px;
+  margin-bottom: 30px; }
   .cotizacion article {
     border: solid 1px #555555;
     background-color: #929292;
@@ -400,7 +363,7 @@ header {
         font-size: 3rem;
         text-decoration: underline 0.25rem;
         color: #555555; }
-    .cotizacion article a {
+    .cotizacion article a, .cotizacion article .navbar .navbar-nav li a, .navbar .navbar-nav li .cotizacion article a {
       color: #FFFFFF; }
 
 .botones_index {
@@ -431,17 +394,21 @@ footer {
   font-weight: bold;
   width: 100%;
   height: auto;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 10px; }
 
 .mapa {
   grid-area: mapa;
   font-weight: bold;
-  text-align: center; }
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px; }
 
 .footer_newsletter {
   grid-area: footer_newsletter;
   font-weight: bold;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 10px; }
 
 .derechos {
   grid-area: derechos;
@@ -449,7 +416,8 @@ footer {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 0.2fr;
   gap: 0px 0px;
-  grid-template-areas: "derechos_texto redes"; }
+  grid-template-areas: "derechos_texto redes";
+  margin-bottom: 10px; }
 
 .derechos_texto {
   grid-area: derechos_texto;
@@ -478,7 +446,7 @@ footer {
 @media screen and (max-width: 768px) {
   .categorias article {
     width: 220px; }
-    .categorias article h1, .categorias article h2 {
+    .categorias article h1, .categorias article h2, .categorias article h3 {
       width: 100%; }
     .categorias article img {
       width: 220px;
@@ -491,14 +459,30 @@ footer {
     display: none; }
   footer {
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, auto);
     gap: 0px 0px;
-    grid-template-areas: "footer_menu mapa" "footer_newsletter footer_newsletter" "derechos derechos";
+    grid-template-areas: "footer_menu" "mapa" "footer_newsletter " "derechos";
     background-color: #c7e3ef;
-    padding: 10px; } }
+    padding: 10px; }
+  .maincatalogo {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, auto);
+    gap: 0px 0px;
+    grid-template-areas: "catalogo_titulo" "filtros" "productos" "cotizacion"; }
+  .filtros {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+  .formulario {
+    font-size: 2.5rem; }
+    .formulario textarea {
+      width: 70%; } }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 425px) {
   header {
     display: grid;
     grid-template-columns: 100%;
@@ -524,7 +508,7 @@ footer {
     .iconos article {
       width: 150px; }
   .cotizacion article {
-    font-size: 2rem; }
+    font-size: 2.5rem; }
   footer {
     display: grid;
     grid-template-columns: 100%;
@@ -532,4 +516,25 @@ footer {
     gap: 0px 0px;
     grid-template-areas: "footer_menu" "mapa" "footer_newsletter" "derechos";
     background-color: #c7e3ef;
-    padding: 10px; } }
+    padding: 10px; }
+  .maincatalogo {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4, auto);
+    gap: 0px 0px;
+    grid-template-areas: "catalogo_titulo" "filtros" "productos" "cotizacion"; }
+    .maincatalogo .productos article img {
+      width: 300px;
+      height: 290px; }
+  .main-nosotros section article h2 {
+    margin: 20px; }
+  .main-nosotros section article p {
+    margin: 20px; }
+  .formulario {
+    margin: 10px; }
+    .formulario input {
+      width: 98%; }
+    .formulario textarea {
+      width: 98%; }
+    .formulario label {
+      font-size: 2.5rem; } }
