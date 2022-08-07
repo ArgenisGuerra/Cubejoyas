@@ -10,7 +10,7 @@ Compuesto por:
 Para modificar las imagenes versión escritorio, reemplace las actuales y mantenga los nombres 1.jpg y 2.jpg
 Lo mismo para versión mobile, manteniendo 1m.jpg y 2m.jpg.
 Es importante que las imagenes sean .jpg.
-2. Banners de categoria
+2. Banners de categoria.
 3. Novedades modificables, de la misma manera que se modifican los banners del carousel. Se modifican en la carpeta del proyecto ../multimedia/novedades/archivo.jpg. 
 El archivo debe nombrarse del 1 al 6 en formato .jpg para que pueda ser tomado.
 4. Iconos referencia
